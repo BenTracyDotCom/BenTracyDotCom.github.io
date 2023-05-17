@@ -7,7 +7,7 @@ export default function hero() {
     <div className="max-w-md">
       <h1 className="mb-5 text-5xl font-bold">Welcome!</h1>
       <p className="mb-5 text-2xl text-slate-200">My name is Ben Tracy. Come see what I've been working on!</p>
-      <button className="btn btn-primary">Get Started</button>
+      <button className="btn bg-slate-700 border-2 border-slate-500">Get Started</button>
     </div>
   </div>
 </div>
