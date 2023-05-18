@@ -16,8 +16,12 @@ export default function PartsBin() {
     setSurprised(surprised === true ? false : true)
   }
 
+  const handlePortfolio = () => {
+    document.getElementById('portfolio').scrollIntoView()
+  }
+
   return (
-    <div className="w-full flex flex-col items-center py-3 mx-5" id="parts-bin">
+    <div className="w-full flex flex-col items-center py-3 mx-5 w-[98%]" id="parts-bin">
       <div className="text-3xl font-bold text-teal-900">The Parts Bin</div>
       <div className="tooltip tooltip-bottom" data-tip="I've relied pretty heavily on the DaisyUI TaiwindCSS component library">
         <p className="pt-5 font-bold text-teal-900">Here are some components I've built. Feel free to fiddle around!</p>
@@ -53,7 +57,8 @@ export default function PartsBin() {
             <label htmlFor="new-review-modal" className="btn btn-warning">New review</label>
             <label htmlFor="search-modal" className="btn btn-accent">RC Parts</label>
             {surprised && <div className="tooltip tooltip-success w-32" data-tip="That was it. Not tryna give potential employers a heart attack or anything.">.</div>}
-            <button className="btn" onClick={handleSurprise}>Surprise</button>
+            <button className="btn btn-primary" onClick={handleSurprise}>Surprise</button>
+            <button className="btn" onClick={handlePortfolio}>Portfolio</button>
           </div>
         </div>
       </div>

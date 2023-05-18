@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SearchList from './SearchList.js';
+import SearchList from './SearchList.jsx';
 import partsArray from '../../assets/parts.js';
 
 const Search = () => {
@@ -9,9 +9,9 @@ const Search = () => {
 
   const titleTypes = ['', 'Airframes','Batteries', "ESC's", "FC's",'Motors', 'Propellers', 'Receivers', 'Servos', 'Transmitters']
 
-  const handleType = (e: React.ChangeEvent<HTMLSelectElement>) => {
+  const handleType = (e) => {
     setType(titleTypes[e.currentTarget.selectedIndex])
-    const filteredParts = partsArray.filter((item: {type:string}) => (item.type === e.currentTarget.value))
+    const filteredParts = partsArray.filter((item) => (item.type === e.currentTarget.value))
     setItems(filteredParts);
   }
 

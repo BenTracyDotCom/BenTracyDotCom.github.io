@@ -1,8 +1,6 @@
 import SearchResult from './SearchResult.jsx'
 
-const SearchList = (props: {
- items: any[]
-}) => {
+const SearchList = (props) => {
 
   return (
     <div>

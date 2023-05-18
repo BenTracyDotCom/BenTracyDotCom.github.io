@@ -15,7 +15,6 @@ function App() {
       <SearchModal />
       <NewReviewModal />
       <FullSizePhoto src={photo} />
-      {/* <Sidebar /> */}
       <div className="w-full">
         <Hero />
         <div className="divider"></div>

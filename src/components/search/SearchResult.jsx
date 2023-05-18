@@ -1,7 +1,6 @@
 
 
-const SearchResult = (props: {
-  item: { name: string, type: string, data: {includes?: any[]}, photoUrl: string, prices: { host: string, url: string, price: string }[] } }) => {
+const SearchResult = (props) => {
 
   const handleAddPart = () => {
    alert('In the actual app, this would add the part to your current build.')
