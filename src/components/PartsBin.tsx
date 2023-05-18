@@ -29,10 +29,14 @@ export default function PartsBin() {
           </div>
         </div>
         <div className="col-span-6 border-2 border-teal-500">
-           Chat Goes Here
+          Chat Goes Here
         </div>
         <div className="border-2 border-yellow-500 col-span-3">
-            Modal buttons go here
+          <div className="flex flex-col  justify-around px-12 h-full">
+            <label htmlFor="my-modal" className="btn">New review</label>
+            <label htmlFor="search-modal" className="btn">RC Parts</label>
+            <label htmlFor="my-modal" className="btn">open modal</label>
+          </div>
         </div>
       </div>
     </div>
