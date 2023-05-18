@@ -1,6 +1,7 @@
-export default function Portfolio (props: { setPhoto: VoidFunction }) {
+export default function Portfolio (props: { setPhoto: React.Dispatch<React.SetStateAction<string>>
+}) {
   return (
-  <div>
+  <div className="flex justify-center">
     Portfolio
   </div>
   )

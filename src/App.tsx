@@ -14,8 +14,10 @@ function App() {
       <Sidebar />
       <div className="w-full">
         <Hero />
+        <div className="divider"></div>
         <PartsBin />
-        <Portfolio setPhoto={setPhoto}/>
+        <div className="divider"></div>
+        <Portfolio setPhoto={setPhoto} />
       </div>
 
     </div>
