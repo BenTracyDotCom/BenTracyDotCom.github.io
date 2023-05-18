@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Hero from './components/hero'
 import FullSizePhoto from './components/FullSizePhoto';
 import Sidebar from './components/sidebar';
+import PartsBin from './components/PartsBin';
 
 function App() {
   const [photo, setPhoto] = useState('');
@@ -11,9 +12,8 @@ function App() {
       <FullSizePhoto src={photo} />
       <Sidebar />
       <div className="w-full">
-
-          <Hero />
-            The rest of the app
+        <Hero />
+        <PartsBin />
       </div>
 
     </div>
