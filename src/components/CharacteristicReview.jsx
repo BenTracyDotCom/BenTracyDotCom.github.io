@@ -2,7 +2,7 @@ import _ from 'underscore'
 import charMap from './CharMap.js'
 import CharRadioSelector from './CharRadioSelector.jsx'
 
-export default function CharacteristicReview( { chars, charRatings, setCharRatings, setCharsFilled, form, setForm }) {
+export default function CharacteristicReview( { chars, setCharsFilled, form, setForm }) {
 
   return (
     <div>
