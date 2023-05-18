@@ -17,7 +17,7 @@ export default function PartsBin() {
   }
 
   return (
-    <div className="w-full flex flex-col items-center py-3 mx-5">
+    <div className="w-full flex flex-col items-center py-3 mx-5" id="parts-bin">
       <div className="text-3xl font-bold text-teal-900">The Parts Bin</div>
       <div className="tooltip tooltip-bottom" data-tip="I've relied pretty heavily on the DaisyUI TaiwindCSS component library">
         <p className="pt-5 font-bold text-teal-900">Here are some components I've built. Feel free to fiddle around!</p>
@@ -47,7 +47,7 @@ export default function PartsBin() {
       </div>
           <Chat />
         </div>
-        <div className="col-span-3">
+        <div className="col-span-3 h-5/6">
          <div className="p-2 mr-5 flex justify-center font-bold text-blue-900">Click these buttons:</div>
           <div className="flex flex-col justify-around px-12 h-full py-10">
             <label htmlFor="new-review-modal" className="btn btn-warning">New review</label>
