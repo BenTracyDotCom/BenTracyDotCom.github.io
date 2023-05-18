@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import Hero from './components/hero'
+import Hero from './components/Hero'
 import FullSizePhoto from './components/FullSizePhoto';
-import Sidebar from './components/sidebar';
+import Sidebar from './components/Sidebar';
 import PartsBin from './components/PartsBin';
 
 function App() {
