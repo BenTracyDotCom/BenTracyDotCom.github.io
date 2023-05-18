@@ -14,7 +14,6 @@ export default function CharRadioSelector({ chars, fitChar, id, best, worst, set
     setCharsFilled(true)
    }
    setForm({...form, charRatings: charObj})
-   console.log(form, 'form')
   }
 
   return (

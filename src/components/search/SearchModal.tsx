@@ -10,17 +10,9 @@ const Search = () => {
   const titleTypes = ['', 'Airframes','Batteries', "ESC's", "FC's",'Motors', 'Propellers', 'Receivers', 'Servos', 'Transmitters']
 
   const handleType = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    console.log(partsArray, 'partsArray')
     setType(titleTypes[e.currentTarget.selectedIndex])
-    const filteredParts = partsArray.filter((item) => (item.type ===e.currentTarget.value))
-    console.log(filteredParts, 'filteredParts')
+    const filteredParts = partsArray.filter((item: {type:string}) => (item.type === e.currentTarget.value))
     setItems(filteredParts);
-
-    // api.getProducts(e.currentTarget.value)
-    // .then(res => {
-    //   setItems(res.data)
-    // })
-    // .catch(err => console.log(err))
   }
 
   return (

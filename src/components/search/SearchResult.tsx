@@ -22,7 +22,7 @@ const SearchResult = (props: {
         <button className="btn btn-circle btn-s btn-success float-right" onClick={handleAddPart}>+</button>
         <div>{props.item.name}</div>
         <div>{`$${bestPrice.price}`}</div>
-      <div className="tooltip tooltip-right" data-tip="These prices reflect the lowest of an array of prices and will navigate to the URL where that price is located in the app.">
+      <div className="tooltip tooltip-right" data-tip="In the app, these prices reflect the lowest of an array of prices and will navigate to the vendor URL where that price is located.">
         <img src={props.item.photoUrl} className="h-40 w-40 m-auto" />
       </div>
     </div>

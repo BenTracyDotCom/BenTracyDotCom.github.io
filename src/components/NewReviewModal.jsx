@@ -24,7 +24,7 @@ export default function NewReviewModal({ id, photo, setPhoto, setDelButton }) {
   useEffect(() => {
 
     setReviewMeta(sampleMeta)
-    setProductName('Camo Onesie')
+    setProductName('Portfolio Site')
   }, [id])
 
   const handleSubmit = () => {
