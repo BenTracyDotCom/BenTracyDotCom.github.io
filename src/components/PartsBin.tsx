@@ -14,8 +14,8 @@ export default function PartsBin() {
       <div className="text-2xl">The Parts Bin</div>
       <p className="py-2">Here are some components I've built. Feel free to fiddle!</p>
 
-      <div className="w-full grid grid-cols-5">
-        <div className="overflow-show">
+      <div className="w-full grid grid-cols-12">
+        <div className="col-span-3">
           <div className="pb-3">Rate these components:</div>
           <div className="tooltip tooltip-top w-max pl-5" data-tip="Responsive text!">
             <StarsRater avgRating={clickRating} setAvgRating={setClickRating} />
@@ -28,10 +28,10 @@ export default function PartsBin() {
             <FitSliders rating={(clickRating + sliderRating) / 2} />
           </div>
         </div>
-        <div className="col-span-3 border-2 border-teal-500">
+        <div className="col-span-6 border-2 border-teal-500">
            Chat Goes Here
         </div>
-        <div className="border-2 border-yellow-500">
+        <div className="border-2 border-yellow-500 col-span-3">
             Modal buttons go here
         </div>
       </div>
