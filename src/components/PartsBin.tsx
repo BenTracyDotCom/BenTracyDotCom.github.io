@@ -28,10 +28,10 @@ export default function PartsBin() {
       <div className="w-full grid grid-cols-12">
         <div className="col-span-3">
           <div className="pb-5 pl-5 font-bold text-blue-900">Rate these components:</div>
-          <div className="tooltip tooltip-top w-max pl-5 pb-5" data-tip="Responsive text!">
+          <div className="tooltip tooltip-top w-max pl-5 pb-5" data-tip="Click for responsive text!">
             <StarsRater avgRating={clickRating} setAvgRating={setClickRating} form={form} setForm={setForm}/>
           </div><br />
-          <div className="tooltip tooltip-right w-max pl-5 pb-5" data-tip="Precise partial filling!">
+          <div className="tooltip tooltip-right w-max pl-5 pb-5" data-tip="Slide for precise partial filling!">
             <StarsWidgetDemo avgRating={sliderRating} setAvgRating={setSliderRating} />
           </div>
           <div className="tooltip tooltip-top" data-tip="Try setting both review components to full!">
