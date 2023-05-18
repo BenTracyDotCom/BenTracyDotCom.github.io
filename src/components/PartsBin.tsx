@@ -23,7 +23,9 @@ export default function PartsBin() {
           <div className="tooltip tooltip-right w-max pl-5" data-tip="Precise partial filling!">
             <StarsWidgetDemo avgRating={sliderRating} setAvgRating={setSliderRating} />
           </div>
-          <MainAverage avgReview={(clickRating + sliderRating) / 2} pctRecommended={100} />
+          <div className="tooltip tooltip-top" data-tip="Try setting both review components to full!">
+            <MainAverage avgReview={(clickRating + sliderRating) / 2} pctRecommended={(clickRating + sliderRating) / 2 === 5 ? 100 : 99.9} />
+          </div>
           <div className="w-64 tooltip tooltip-right w-min" data-tip="Updates from average review">
             <FitSliders rating={(clickRating + sliderRating) / 2} />
           </div>
@@ -32,6 +34,7 @@ export default function PartsBin() {
           Chat Goes Here
         </div>
         <div className="border-2 border-yellow-500 col-span-3">
+         I  ❤️  buttons
           <div className="flex flex-col  justify-around px-12 h-full">
             <label htmlFor="my-modal" className="btn">New review</label>
             <label htmlFor="search-modal" className="btn">RC Parts</label>
