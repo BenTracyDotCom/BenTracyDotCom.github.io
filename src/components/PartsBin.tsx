@@ -21,13 +21,13 @@ export default function PartsBin() {
       <div className="text-3xl font-bold text-teal-900">The Parts Bin</div>
       <div className="tooltip tooltip-bottom" data-tip="I've relied pretty heavily on the DaisyUI TaiwindCSS component library">
         <p className="pt-5 font-bold text-teal-900">Here are some components I've built. Feel free to fiddle around!</p>
-        <div className="divider pb-10"></div>
+        <div className="divider pb-2"></div>
 
       </div>
 
       <div className="w-full grid grid-cols-12">
         <div className="col-span-3">
-          <div className="pb-5 pl-5">Rate these components:</div>
+          <div className="pb-5 pl-5 font-bold text-blue-900">Rate these components:</div>
           <div className="tooltip tooltip-top w-max pl-5 pb-5" data-tip="Responsive text!">
             <StarsRater avgRating={clickRating} setAvgRating={setClickRating} form={form} setForm={setForm}/>
           </div><br />
@@ -42,13 +42,13 @@ export default function PartsBin() {
           </div>
         </div>
         <div className="col-span-6">
-        <div className="flex justify-center">
+        <div className="flex justify-center font-bold text-blue-900">
         Chat with this virtual host:
       </div>
           <Chat />
         </div>
         <div className="col-span-3">
-         <div className="p-2 mr-5 flex justify-center">Click these buttons:</div>
+         <div className="p-2 mr-5 flex justify-center font-bold text-blue-900">Click these buttons:</div>
           <div className="flex flex-col justify-around px-12 h-full py-10">
             <label htmlFor="new-review-modal" className="btn btn-warning">New review</label>
             <label htmlFor="search-modal" className="btn btn-accent">RC Parts</label>

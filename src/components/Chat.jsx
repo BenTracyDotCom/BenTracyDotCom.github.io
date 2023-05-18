@@ -29,12 +29,12 @@ export default function Chat() {
       <div>
         <div style={chatContainerStyle}>
           <div style={chatContentContainerStyle} id="chatbox">
-            {messages.map((message) => {
+            {messages.map((message, i) => {
               return (
-                <p className={`text-2xl`}>{
-                  message
-                }
-                </p>
+                <div>
+                  <p className={`text-xl`}>{message}</p>
+                  {i < messages.length - 1 && <div className="divider my-0"></div>}
+                </div>
               )
             }
             )}
@@ -65,7 +65,7 @@ export default function Chat() {
 var chatContainerStyle = {
   backgroundColor: "rgba(200, 200, 200, 0.2)",
   width: "80%",
-  height: "70vh",
+  height: "50vh",
   marginLeft: "auto",
   marginRight: "20px",
   marginBottom: "20px",
