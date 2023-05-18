@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import FullSizePhoto from './components/FullSizePhoto';
 import Sidebar from './components/Sidebar';
 import PartsBin from './components/PartsBin';
+import Portfolio from './components/Portfolio';
 
 function App() {
   const [photo, setPhoto] = useState('');
@@ -14,6 +15,7 @@ function App() {
       <div className="w-full">
         <Hero />
         <PartsBin />
+        <Portfolio setPhoto={setPhoto}/>
       </div>
 
     </div>
