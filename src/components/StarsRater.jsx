@@ -1,11 +1,12 @@
 import { useState } from "react"
 
-export default function StarsRater() {
+export default function StarsRater({ avgRating, setAvgRating}) {
 
   const[form, setForm] = useState({stars: "0"})
 
   const handleClick = (evt) => {
     setForm({...form, stars: evt.target.value})
+    setAvgRating(parseInt(evt.target.value))
   }
 
   const starMeaning = {
