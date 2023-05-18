@@ -2,7 +2,7 @@ export default function Chat() {
 
   return (
     <div>
-      Chat
+      Chat goes here
     </div>
   )
 }

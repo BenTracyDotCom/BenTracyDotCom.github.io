@@ -3,6 +3,7 @@ import StarsRater from "./StarsRater.jsx"
 import StarsWidgetDemo from "./StarsWidgetDemo.jsx"
 import FitSliders from "./FitSliders.jsx"
 import MainAverage from "./MainAverage.jsx"
+import Chat from "./Chat.jsx"
 
 export default function PartsBin() {
 
@@ -39,14 +40,14 @@ export default function PartsBin() {
           </div>
         </div>
         <div className="col-span-6 border-2 border-teal-500">
-          Chat Goes Here
+          <Chat />
         </div>
         <div className="col-span-3">
          <div className="p-2 mr-5">I  ❤️  buttons</div>
-          <div className="flex flex-col  justify-around px-12 h-full py-10">
+          <div className="flex flex-col justify-around px-12 h-full py-10">
             <label htmlFor="new-review-modal" className="btn btn-warning">New review</label>
             <label htmlFor="search-modal" className="btn btn-accent">RC Parts</label>
-            {surprised && <div className="tooltip tooltip-success" data-tip="That was it. Not tryna give potential employers a heart attack or anything.">.</div>}
+            {surprised && <div className="tooltip tooltip-success w-32" data-tip="That was it. Not tryna give potential employers a heart attack or anything.">.</div>}
             <button className="btn" onClick={handleSurprise}>Surprise</button>
           </div>
         </div>
