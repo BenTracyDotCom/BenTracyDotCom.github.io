@@ -5,6 +5,7 @@ import Sidebar from './components/Sidebar';
 import PartsBin from './components/PartsBin';
 import Portfolio from './components/Portfolio';
 import SearchModal from './components/search/SearchModal';
+import NewReviewModal from './components/NewReviewModal.jsx';
 
 function App() {
   const [photo, setPhoto] = useState('');
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className="flex relative">
       <SearchModal />
+      <NewReviewModal />
       <FullSizePhoto src={photo} />
       <Sidebar />
       <div className="w-full">

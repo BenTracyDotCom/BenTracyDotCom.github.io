@@ -36,7 +36,7 @@ export default function PartsBin() {
         <div className="border-2 border-yellow-500 col-span-3">
          I  ❤️  buttons
           <div className="flex flex-col  justify-around px-12 h-full">
-            <label htmlFor="my-modal" className="btn">New review</label>
+            <label htmlFor="new-review-modal" className="btn">New review</label>
             <label htmlFor="search-modal" className="btn">RC Parts</label>
             <label htmlFor="my-modal" className="btn">open modal</label>
           </div>
