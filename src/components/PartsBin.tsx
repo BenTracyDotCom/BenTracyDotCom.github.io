@@ -17,19 +17,21 @@ export default function PartsBin() {
   }
 
   return (
-    <div className="w-full flex flex-col items-center py-3">
-      <div className="text-2xl">The Parts Bin</div>
+    <div className="w-full flex flex-col items-center py-3 mx-5">
+      <div className="text-3xl font-bold text-teal-900">The Parts Bin</div>
       <div className="tooltip tooltip-bottom" data-tip="I've relied pretty heavily on the DaisyUI TaiwindCSS component library">
-        <p className="py-2">Here are some components I've built. Feel free to fiddle!</p>
+        <p className="pt-5 font-bold text-teal-900">Here are some components I've built. Feel free to fiddle around!</p>
+        <div className="divider pb-10"></div>
+
       </div>
 
       <div className="w-full grid grid-cols-12">
         <div className="col-span-3">
-          <div className="pb-3">Rate these components:</div>
-          <div className="tooltip tooltip-top w-max pl-5" data-tip="Responsive text!">
+          <div className="pb-5 pl-5">Rate these components:</div>
+          <div className="tooltip tooltip-top w-max pl-5 pb-5" data-tip="Responsive text!">
             <StarsRater avgRating={clickRating} setAvgRating={setClickRating} form={form} setForm={setForm}/>
-          </div>
-          <div className="tooltip tooltip-right w-max pl-5" data-tip="Precise partial filling!">
+          </div><br />
+          <div className="tooltip tooltip-right w-max pl-5 pb-5" data-tip="Precise partial filling!">
             <StarsWidgetDemo avgRating={sliderRating} setAvgRating={setSliderRating} />
           </div>
           <div className="tooltip tooltip-top" data-tip="Try setting both review components to full!">
@@ -39,11 +41,14 @@ export default function PartsBin() {
             <FitSliders rating={(clickRating + sliderRating) / 2} />
           </div>
         </div>
-        <div className="col-span-6 border-2 border-teal-500">
+        <div className="col-span-6">
+        <div className="flex justify-center">
+        Chat with this virtual host:
+      </div>
           <Chat />
         </div>
         <div className="col-span-3">
-         <div className="p-2 mr-5">I  ❤️  buttons</div>
+         <div className="p-2 mr-5 flex justify-center">Click these buttons:</div>
           <div className="flex flex-col justify-around px-12 h-full py-10">
             <label htmlFor="new-review-modal" className="btn btn-warning">New review</label>
             <label htmlFor="search-modal" className="btn btn-accent">RC Parts</label>
