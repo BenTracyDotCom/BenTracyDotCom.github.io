@@ -14,18 +14,26 @@ export default function PartsBin() {
       <div className="text-2xl">The Parts Bin</div>
       <p className="py-2">Here are some components I've built. Feel free to fiddle!</p>
 
-      <div className="w-full grid columns-3">
-        <div className="pb-3">Rate these components:</div>
-        <div className="tooltip tooltip-top w-max pl-5" data-tip="Responsive text!">
-          <StarsRater avgRating={clickRating} setAvgRating={setClickRating}/>
-        </div>
-        <div className="tooltip tooltip-right w-max pl-5" data-tip="Precise partial filling!">
-          <StarsWidgetDemo avgRating={sliderRating} setAvgRating={setSliderRating}/>
-        </div>
-          <MainAverage avgReview={(clickRating + sliderRating) / 2} pctRecommended={100}/>
-          <div className="w-64 tooltip tooltip-right w-min" data-tip="Updates from average review">
-            <FitSliders rating={(clickRating + sliderRating) / 2}/>
+      <div className="w-full grid grid-cols-5">
+        <div className="overflow-show">
+          <div className="pb-3">Rate these components:</div>
+          <div className="tooltip tooltip-top w-max pl-5" data-tip="Responsive text!">
+            <StarsRater avgRating={clickRating} setAvgRating={setClickRating} />
           </div>
+          <div className="tooltip tooltip-right w-max pl-5" data-tip="Precise partial filling!">
+            <StarsWidgetDemo avgRating={sliderRating} setAvgRating={setSliderRating} />
+          </div>
+          <MainAverage avgReview={(clickRating + sliderRating) / 2} pctRecommended={100} />
+          <div className="w-64 tooltip tooltip-right w-min" data-tip="Updates from average review">
+            <FitSliders rating={(clickRating + sliderRating) / 2} />
+          </div>
+        </div>
+        <div className="col-span-3 border-2 border-teal-500">
+           Chat Goes Here
+        </div>
+        <div className="border-2 border-yellow-500">
+            Modal buttons go here
+        </div>
       </div>
     </div>
   )
