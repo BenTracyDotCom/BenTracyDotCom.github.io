@@ -9,6 +9,7 @@ export default function PartsBin() {
   const [clickRating, setClickRating] = useState(0)
   const [sliderRating, setSliderRating] = useState(0)
   const [surprised, setSurprised] = useState(false)
+  const [form, setForm] = useState({stars: "0"})
 
   const handleSurprise = () => {
     setSurprised(surprised === true ? false : true)
@@ -25,7 +26,7 @@ export default function PartsBin() {
         <div className="col-span-3">
           <div className="pb-3">Rate these components:</div>
           <div className="tooltip tooltip-top w-max pl-5" data-tip="Responsive text!">
-            <StarsRater avgRating={clickRating} setAvgRating={setClickRating} />
+            <StarsRater avgRating={clickRating} setAvgRating={setClickRating} form={form} setForm={setForm}/>
           </div>
           <div className="tooltip tooltip-right w-max pl-5" data-tip="Precise partial filling!">
             <StarsWidgetDemo avgRating={sliderRating} setAvgRating={setSliderRating} />

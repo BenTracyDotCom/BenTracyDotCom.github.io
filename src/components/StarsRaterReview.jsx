@@ -30,7 +30,7 @@ export default function StarsRater({ setAvgRating, form, setForm}) {
         <input type="radio" name="rating-1" className="mask mask-star dark:bg-slate-200" value="4" onClick={handleClick}/>
         <input type="radio" name="rating-1" className="mask mask-star dark:bg-slate-200" value="5" onClick={handleClick}/>
       </span>
-        <span className="pl-4 -mt-8 text-xl" value="0">{`${starMeaning[form.stars]}`}</span>
+        {form.stars && <span className="pl-4 -mt-8 text-xl" value="0">{`${starMeaning[form.stars]}`}</span>}
     </div>
   )
 }

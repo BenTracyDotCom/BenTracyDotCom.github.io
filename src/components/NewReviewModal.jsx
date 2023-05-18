@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import CharacteristicReview from './CharacteristicReview.jsx'
-import StarsRater from './StarsRater.jsx'
+import StarsRater from './StarsRaterReview.jsx'
 import sampleMeta from '../assets/sampleMeta.js'
 import sampleReviewData from '../assets/sampleReviewData.js'
 
