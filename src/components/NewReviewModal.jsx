@@ -129,11 +129,11 @@ export default function NewReviewModal({ id, photo, setPhoto, setDelButton }) {
             <label className="label pt-5 w-full pb-0">
               <span className="text-xl w-full">Review summary:</span>
             </label>
-            <input type="text" className="input input-bordered w-full text-black" placeholder="Example: Pest purchase ever!" onChange={handleSummaryChange} maxLength={60} value={!form.summary ? '' : form.summary}/>
+            <input type="text" className="input input-bordered w-full text-black" placeholder="Example: Best purchase ever!" onChange={handleSummaryChange} maxLength={60}/>
             <label className="label pt-5 pb-0">
               <span className="text-xl">Review body:</span>
             </label>
-            <textarea className={`textarea text-black ${badSubmission.bodyLength && reqRemaining !== 'Minimum reached' ? 'textarea-error' : 'textarea-bordered'}`} placeholder="Why did you like this product or not?" onChange={handleBodyChange} value={!form.body ? '' : form.body}></textarea>
+            <textarea className={`textarea text-black ${badSubmission.bodyLength && reqRemaining !== 'Minimum reached' ? 'textarea-error' : 'textarea-bordered'}`} placeholder="Why did you like this product or not?" onChange={handleBodyChange}></textarea>
             <label className="label pt-0 pb-5">
               <span className={`label-text-alt ${badSubmission.bodyLength && reqRemaining !== 'Minimum reached' ? 'text-error' : 'dark:text-slate-400'}`} >{reqRemaining}</span>
             </label>
