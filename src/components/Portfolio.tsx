@@ -24,7 +24,7 @@ export default function Portfolio(props: {
               Everglades is a front-end business app for online retail. It was designed with simplicity and visual appeal in mind. The sleek, straight-forward, and user-friendly design of the website allows for easy access. I designed the Ratings & Reviews module which included a dynamic overview and responsive review tiles.
             </p>
             <div className="px-6 pt-4 pb-2 flex justify-center">
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><a href="https://www.github.com/BenTracyDotCom/RCPartPicker" target="_blank">Github</a></span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><a href="https://github.com/Team-Everglades/project-atelier" target="_blank">Github</a></span>
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@ export default function Portfolio(props: {
               The goal of RC Part Picker is to create an on-ramp for aspiring RC plane hobbyists by allowing them to dream realistically. This app allows users to store several build ideas, track part prices and orders, and provides part compatibility validation in case the user just doesn't know what questions to ask.
             </p>
             <div className="px-6 pt-4 pb-2 flex justify-center">
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><a href="https://github.com/Team-Everglades/project-atelier" target="_blank">Github</a></span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><a href="https://www.github.com/BenTracyDotCom/RCPartPicker" target="_blank">Github</a></span>
             </div>
           </div>
         </div>
