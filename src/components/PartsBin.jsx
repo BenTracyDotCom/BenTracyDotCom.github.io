@@ -39,7 +39,7 @@ export default function PartsBin() {
           <div className="tooltip tooltip-top" data-tip="Try setting both review components to full!">
             <MainAverage avgReview={(clickRating + sliderRating) / 2} pctRecommended={(clickRating + sliderRating) / 2 === 5 ? 100 : 99.9} />
           </div>
-          <div className="w-64 tooltip tooltip-right w-min" data-tip="Updates from average review">
+          <div className="w-full tooltip tooltip-right" data-tip="Updates from average review">
             <FitSliders rating={(clickRating + sliderRating) / 2} />
           </div>
         </div>

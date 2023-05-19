@@ -6,7 +6,7 @@ export default function hero() {
   }
 
   return (
-<div className="hero min-h-screen bg-[url('/src/images/blueridge.jpeg')]">
+<div className="hero min-h-screen bg-[url('/assets/img/blueridge.jpeg')]">
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-center text-neutral-content">
     <div className="max-w-md">

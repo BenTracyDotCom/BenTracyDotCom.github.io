@@ -2,6 +2,9 @@ export default function Portfolio(props: {
   setPhoto: React.Dispatch<React.SetStateAction<string>>
 }) {
 
+  const handleClick = () => {
+    document.getElementById('contact')?.scrollIntoView()
+  }
 
   const handlePhoto = (e: React.MouseEvent<HTMLImageElement>) => {
     props.setPhoto(e.currentTarget.src)
@@ -50,6 +53,7 @@ export default function Portfolio(props: {
           </div>
         </div>
       </div>
+      <div className="divider pb-2"></div>
     </div>
   )
 }
