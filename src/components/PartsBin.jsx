@@ -10,7 +10,7 @@ export default function PartsBin() {
   const [clickRating, setClickRating] = useState(0)
   const [sliderRating, setSliderRating] = useState(0)
   const [surprised, setSurprised] = useState(false)
-  const [form, setForm] = useState({stars: "0"})
+  const [form, setForm] = useState({ stars: "0" })
 
   const handleSurprise = () => {
     setSurprised(surprised === true ? false : true)
@@ -26,14 +26,12 @@ export default function PartsBin() {
       <div className="tooltip tooltip-bottom" data-tip="I've relied pretty heavily on the DaisyUI TaiwindCSS component library">
         <p className="pt-5 font-bold text-teal-900">Here are some components I've built. Feel free to fiddle around!</p>
         <div className="divider pb-2"></div>
-
       </div>
-
       <div className="w-full grid grid-cols-12">
         <div className="col-span-3">
           <div className="pb-5 pl-5 font-bold text-blue-900">Rate these components:</div>
           <div className="tooltip tooltip-top w-max pl-5 pb-5" data-tip="Click for responsive text!">
-            <StarsRater avgRating={clickRating} setAvgRating={setClickRating} form={form} setForm={setForm}/>
+            <StarsRater avgRating={clickRating} setAvgRating={setClickRating} form={form} setForm={setForm} />
           </div><br />
           <div className="tooltip tooltip-right w-max pl-5 pb-5" data-tip="Slide for precise partial filling!">
             <StarsWidgetDemo avgRating={sliderRating} setAvgRating={setSliderRating} />
@@ -46,13 +44,13 @@ export default function PartsBin() {
           </div>
         </div>
         <div className="col-span-6">
-        <div className="flex justify-center font-bold text-blue-900">
-        Chat with this virtual host:
-      </div>
+          <div className="flex justify-center font-bold text-blue-900">
+            Chat with this virtual host:
+          </div>
           <Chat />
         </div>
         <div className="col-span-3 h-5/6">
-         <div className="p-2 mr-5 flex justify-center font-bold text-blue-900">Click these buttons:</div>
+          <div className="p-2 mr-5 flex justify-center font-bold text-blue-900">Click these buttons:</div>
           <div className="flex flex-col justify-around px-12 h-full py-10">
             <label htmlFor="new-review-modal" className="btn btn-warning">New review</label>
             <label htmlFor="search-modal" className="btn btn-accent">RC Parts</label>
