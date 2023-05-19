@@ -14,7 +14,7 @@ export default function Portfolio(props: {
       <div className="divider pb-2 m-auto w-[49%]"></div>
       <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
         <div className="rounded overflow-hidden shadow-lg">
-          <label htmlFor="fullsize-photo-modal"><img className="w-full" src="../src/images/RR.png" alt="Ratings & Reviews Module" onClick={handlePhoto} /></label>
+          <label htmlFor="fullsize-photo-modal"><img className="w-full" src="/assets/img/RR.png" alt="Ratings & Reviews Module" onClick={handlePhoto} /></label>
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">Everglades</div>
             <p className="text-gray-700 text-base">
@@ -26,7 +26,7 @@ export default function Portfolio(props: {
           </div>
         </div>
         <div className="rounded overflow-hidden shadow-lg">
-          <label htmlFor="fullsize-photo-modal"><img className="w-full" src="../src/images/weReWolf.png" alt="We'reWolf" onClick={handlePhoto} /></label>
+          <label htmlFor="fullsize-photo-modal"><img className="w-full" src="/assets/img/weReWolf.png" alt="We'reWolf" onClick={handlePhoto} /></label>
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">We'reWolf</div>
             <p className="text-gray-700 text-base">
@@ -38,7 +38,7 @@ export default function Portfolio(props: {
           </div>
         </div>
         <div className="rounded overflow-hidden shadow-lg">
-          <label htmlFor="fullsize-photo-modal"><img className="w-full" src="../src/images/RCPartPicker.jpg" alt="RC Part Picker" onClick={handlePhoto} /></label>
+          <label htmlFor="fullsize-photo-modal"><img className="w-full" src="/assets/img/RCPartPicker.jpg" alt="RC Part Picker" onClick={handlePhoto} /></label>
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">RC Part Picker</div>
             <p className="text-gray-700 text-base">
